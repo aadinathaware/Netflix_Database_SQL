@@ -1,4 +1,5 @@
 # Netflix Shows and Movies - SQL Database Project
+![](logo.png)
 
 ## Overview
 This project involves creating a normalized SQL database derived from a dataset of Netflix shows and movies. The original dataset was obtained from Kaggle: [Netflix Shows and Movies - Exploratory Analysis](https://www.kaggle.com/code/shivamb/netflix-shows-and-movies-exploratory-analysis/input).
@@ -33,7 +34,7 @@ This README is intended to provide a comprehensive guide to understanding and na
 
 The Entity-Relationship Diagram (ERD) below visually represents the structure and interconnections of the various tables within the database. This diagram illustrates how data is organized and related across different aspects of the Netflix shows and movies dataset. (Once I have time I will combine several tables into one such as a single MOVIES table which would contain show_id, title, description, duration, etc.)  
   
-<img width="1728" alt="image" src="https://github.com/miniquinox/Netflix-Database-SQL/assets/63688331/d9f5a8b6-50ba-4197-b7a5-fb48fd73a552">  
+<img width="1728" alt="image" src="Schema.png">  
   
 ## Potential Business Questions
 
