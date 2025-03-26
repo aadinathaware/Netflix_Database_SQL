@@ -9,7 +9,7 @@ LIMIT 5;
 
 -- 2. Find the number of movies released per year
 SELECT release_year, COUNT(*) AS total_movies
-FROM movies
+FROM time_info
 GROUP BY release_year
 ORDER BY release_year DESC;
 
@@ -43,10 +43,10 @@ GROUP BY l.listed_name
 ORDER BY num_movies DESC;
 
 -- 7. Retrieve movies with a specific rating (e.g., 'PG-13')
-SELECT m.title, dr.rating_id
-FROM movies m
-JOIN data_rating dr ON m.show_id = dr.show_id
-WHERE dr.rating_id = 'PG-13';
+SELECT *
+FROM data_rating dr
+JOIN rating r ON dr.rating_id = r.rating_id
+where rating_description= "PG-13";
 
 -- 8. Find the longest movie duration in each genre
 SELECT l.listed_name, MAX(mi.duration) AS max_duration
@@ -68,14 +68,7 @@ GROUP BY duration
 ORDER BY frequency DESC
 LIMIT 1;
 
--- 11. Find the movies with the longest descriptions
-SELECT m.title, LENGTH(md.description) AS description_length
-FROM movies m
-JOIN movie_description md ON m.show_id = md.show_id
-ORDER BY description_length DESC
-LIMIT 5;
-
--- 12. Retrieve all directors who have worked in multiple genres
+-- 11. Retrieve all directors who have worked in multiple genres
 SELECT d.director_name, COUNT(DISTINCT dl.listed_id) AS genre_count
 FROM director d
 JOIN casting ca ON d.director_id = ca.director_id
@@ -83,21 +76,8 @@ JOIN data_listed_in dl ON ca.show_id = dl.show_id
 GROUP BY d.director_name
 HAVING genre_count > 1;
 
--- 13. Get the movies directed by the most prolific director
-SELECT m.title, d.director_name
-FROM movies m
-JOIN casting ca ON m.show_id = ca.show_id
-JOIN director d ON ca.director_id = d.director_id
-WHERE d.director_name = (
-    SELECT d.director_name
-    FROM director d
-    JOIN casting ca ON d.director_id = ca.director_id
-    GROUP BY d.director_name
-    ORDER BY COUNT(ca.show_id) DESC
-    LIMIT 1
-);
 
--- 14. Find the top 3 countries producing the most movies
+-- 12. Find the top 3 countries producing the most movies
 SELECT misc.country_name, COUNT(m.show_id) AS total_movies
 FROM movies m
 JOIN misc ON m.show_id = misc.show_id
@@ -105,14 +85,7 @@ GROUP BY misc.country_name
 ORDER BY total_movies DESC
 LIMIT 3;
 
--- 15. Retrieve the shortest movie in the dataset
-SELECT m.title, mi.duration
-FROM movies m
-JOIN movie_info mi ON m.show_id = mi.show_id
-ORDER BY mi.duration ASC
-LIMIT 1;
-
--- 15. Retrieve the shortest movie in the dataset
+-- 13. Retrieve the shortest movie in the dataset
 SELECT m.title, mi.duration
 FROM movies m
 JOIN movie_info mi ON m.show_id = mi.show_id
