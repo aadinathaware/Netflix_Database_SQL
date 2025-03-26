@@ -2,8 +2,7 @@
 ![](logo.png)
 
 ## Overview
-This project involves creating a normalized SQL database derived from a dataset of Netflix shows and movies. The original dataset was obtained from Kaggle: [Netflix Shows and Movies - Exploratory Analysis](https://www.kaggle.com/code/shivamb/netflix-shows-and-movies-exploratory-analysis/input).
-
+This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
 The purpose of this project is to demonstrate data normalization and SQL database creation skills, transforming a flat CSV file into a structured and normalized SQL database.
 
 ## Database Structure
@@ -38,38 +37,64 @@ The Entity-Relationship Diagram (ERD) below visually represents the structure an
   
 ## Potential Business Questions
 
-This Netflix shows and movies database can address various business problems. Below are some potential business questions and the corresponding SQL queries that can provide insights:
+### 1. Retrieve the Most Popular Movie Genres
 
-### Content Strategy Development
-- **Problem**: Determining which genres or types of content are most popular to inform future content acquisition or production.
-- **Query**: Analyze the distribution of shows/movies across different genres (`LISTED_IN`) and ratings (`RATING`) to identify popular categories.
+Objective: Identify the most common genres to focus on popular content.
 
-### Market Analysis
-- **Problem**: Understanding the distribution of content across different countries to tailor marketing strategies.
-- **Query**: Aggregate the number of shows/movies by country (`MISC.country_name`) to see which regions have the most content.
 
-### Release Timing Optimization
-- **Problem**: Identifying the best time of year to release new content.
-- **Query**: Examine trends in `date_added` (from `TIME_INFO`) to see which months or seasons have historically had the most releases.
+### 2. Find the Top 5 Most Featured Actors
 
-### Director and Cast Analysis
-- **Problem**: Finding successful director and cast combinations for future projects.
-- **Query**: Analyze the past collaborations between directors (`DIRECTOR`) and cast members (`CAST`) that led to highly-rated or popular shows/movies.
+Objective: Identify actors who appear in the most movies.
 
-### Viewer Preferences Study
-- **Problem**: Understanding viewer preferences based on historical data.
-- **Query**: Correlate the genres (`LISTED_IN`) and ratings (`RATING`) of shows/movies with their release years (`TIME_INFO.release_year`) to spot trends over time.
 
-### Content Longevity Analysis
-- **Problem**: Assessing which types of content remain relevant or popular for longer periods.
-- **Query**: Compare the release year (`TIME_INFO.release_year`) and the date added to the platform (`TIME_INFO.date_added`) to determine content longevity.
+### 3. List Directors with the Most Movies
+Objective: Find the most prolific directors to collaborate with.
 
-### Localization Strategy
-- **Problem**: Tailoring content and marketing strategies for specific countries.
-- **Query**: Identify the most common genres (`LISTED_IN`) and types (`MISC.type_name`) of shows/movies in specific countries (`MISC.country_name`).
 
-### Budget Allocation for New Productions
-- **Problem**: Determining which types of content warrant higher investment.
-- **Query**: Assess the correlation between content genres (`LISTED_IN`) and their ratings/popularity to allocate budget effectively.
+### 4. Get Movies Released in the Last 5 Years
+Objective: Identify recent movie releases for marketing campaigns.
+
+
+### 5. Find the Average Movie Duration by Genre
+Objective: Understand genre-based trends in movie length.
+
+
+### 6. Identify the Most Frequent Movie Ratings
+Objective: Discover the most common movie ratings to understand content classification.
+
+
+### 7. Find Movies Available in Multiple Categories
+Objective: Identify movies with diverse audience appeal.
+
+
+### 8. Get the Number of Movies per Country
+Objective: Determine which countries contribute the most content.
+
+
+### 9. Find the Shortest and Longest Movies
+Objective: Analyze movie durations for content strategy.
+
+
+### 10. List Movies with the Most Cast Members
+Objective: Identify large ensemble cast productions.
+
+
+### 11. Find the Director with the Highest Movie Duration Average
+Objective: Understand directors' content preferences (short vs. long movies).
+
+
+### 12. Find the Percentage of Movies by Type (TV Show vs. Movie)
+Objective: Understand content type distribution.
+
+
+### 13. Find the Most Frequent Movie Duration
+Objective: Identify the most common movie lengths.
+
+
+### 14. Retrieve the Oldest Movies in the Database
+Objective: Find the oldest content still available.
+
+### 15. Find Directors Who Worked on Multiple Genres
+Objective: Identify versatile directors.
 
 These queries leverage the rich data available in this Netflix shows and movies database to guide decision-making in content strategy, marketing, production, and more.
