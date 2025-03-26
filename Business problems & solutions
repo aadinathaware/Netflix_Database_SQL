@@ -119,37 +119,3 @@ JOIN movie_info mi ON m.show_id = mi.show_id
 ORDER BY mi.duration ASC
 LIMIT 1;
 
--- 16. Find the average movie duration per genre
-SELECT l.listed_name, AVG(mi.duration) AS avg_duration
-FROM listed_in l
-JOIN movie_info mi ON l.listed_id = mi.listed_id
-GROUP BY l.listed_name;
-
--- 17. List the movies that have more than one director
-SELECT m.title, COUNT(DISTINCT d.director_id) AS director_count
-FROM movies m
-JOIN casting ca ON m.show_id = ca.show_id
-JOIN director d ON ca.director_id = d.director_id
-GROUP BY m.title
-HAVING director_count > 1;
-
--- 18. Find the most commonly used rating
-SELECT dr.rating_id, COUNT(*) AS rating_count
-FROM data_rating dr
-GROUP BY dr.rating_id
-ORDER BY rating_count DESC
-LIMIT 1;
-
--- 19. Retrieve the movies with the highest number of genres
-SELECT m.title, COUNT(dl.listed_id) AS genre_count
-FROM movies m
-JOIN data_listed_in dl ON m.show_id = dl.show_id
-GROUP BY m.title
-ORDER BY genre_count DESC
-LIMIT 5;
-
--- 20. Find the earliest released movie in the dataset
-SELECT title, release_year
-FROM movies
-ORDER BY release_year ASC
-LIMIT 1;
