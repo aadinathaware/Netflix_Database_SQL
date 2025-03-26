@@ -37,64 +37,71 @@ The Entity-Relationship Diagram (ERD) below visually represents the structure an
   
 ## Potential Business Questions
 
-### 1. Retrieve the Most Popular Movie Genres
+### 1. Retrieve the top 5 most popular movies based on their number of cast members
+📌 Business Objective:
+Identify movies with the largest cast to understand production scale, star power, and potential audience appeal. Useful for marketing and content promotion.
 
-Objective: Identify the most common genres to focus on popular content.
+### 2. Find the number of movies released per year
+📌 Business Objective:
+Analyze movie production trends over time to determine industry growth, peak production years, and shifts in content creation.
+
+### 3. Get movies that belong to multiple genres
+📌 Business Objective:
+Identify versatile movies that appeal to diverse audiences. Useful for content recommendation systems and genre-based promotions.
+
+### 4. List all movies along with their director
+📌 Business Objective:
+Provide insights into director-movie relationships for industry research, fan engagement, and content navigation on streaming platforms.
+
+### 5. Find the top 5 most frequent directors
+📌 Business Objective:
+Identify the most prolific directors, helping in talent acquisition, industry analysis, and promotional collaborations.
+
+### 6. Get the number of movies per genre
+📌 Business Objective:
+Understand genre popularity to guide content acquisition, platform recommendations, and audience targeting.
+
+### 7. Retrieve movies with a specific rating (e.g., 'PG-13')
+📌 Business Objective:
+Enable filtering based on audience age suitability, ensuring appropriate content recommendations and regulatory compliance.
+
+### 8. Find the longest movie duration in each genre
+📌 Business Objective:
+Analyze movie length trends across genres to optimize user engagement strategies and streaming platform recommendations.
+
+### 9. Find the total number of movies per country
+📌 Business Objective:
+Identify key movie-producing countries for international market expansion, content acquisition, and regional licensing deals.
+
+### 10. Get the most common movie duration
+📌 Business Objective:
+Understand standard movie lengths to align content strategies with audience viewing preferences.
+
+### 11. Find the movies with the longest descriptions
+📌 Business Objective:
+Analyze content metadata quality to improve movie descriptions, SEO optimization, and user engagement on streaming platforms.
+
+### 12. Retrieve all directors who have worked in multiple genres
+📌 Business Objective:
+Identify versatile directors for diverse content creation, talent hiring, and cross-genre collaborations.
+
+### 13. Get the movies directed by the most prolific director
+📌 Business Objective:
+Highlight the most influential director’s work for marketing campaigns, retrospectives, and audience engagement.
+
+### 14. Find the top 3 countries producing the most movies
+📌 Business Objective:
+Determine dominant movie-producing countries to guide investment, partnerships, and content licensing strategies.
+
+### 15. Retrieve the shortest movie in the dataset
+📌 Business Objective:
+Understand content variations in runtime, useful for categorizing short films, optimizing platform recommendations, and audience engagement.
 
 
-### 2. Find the Top 5 Most Featured Actors
-
-Objective: Identify actors who appear in the most movies.
 
 
-### 3. List Directors with the Most Movies
-Objective: Find the most prolific directors to collaborate with.
 
 
-### 4. Get Movies Released in the Last 5 Years
-Objective: Identify recent movie releases for marketing campaigns.
 
-
-### 5. Find the Average Movie Duration by Genre
-Objective: Understand genre-based trends in movie length.
-
-
-### 6. Identify the Most Frequent Movie Ratings
-Objective: Discover the most common movie ratings to understand content classification.
-
-
-### 7. Find Movies Available in Multiple Categories
-Objective: Identify movies with diverse audience appeal.
-
-
-### 8. Get the Number of Movies per Country
-Objective: Determine which countries contribute the most content.
-
-
-### 9. Find the Shortest and Longest Movies
-Objective: Analyze movie durations for content strategy.
-
-
-### 10. List Movies with the Most Cast Members
-Objective: Identify large ensemble cast productions.
-
-
-### 11. Find the Director with the Highest Movie Duration Average
-Objective: Understand directors' content preferences (short vs. long movies).
-
-
-### 12. Find the Percentage of Movies by Type (TV Show vs. Movie)
-Objective: Understand content type distribution.
-
-
-### 13. Find the Most Frequent Movie Duration
-Objective: Identify the most common movie lengths.
-
-
-### 14. Retrieve the Oldest Movies in the Database
-Objective: Find the oldest content still available.
-
-### 15. Find Directors Who Worked on Multiple Genres
-Objective: Identify versatile directors.
 
 These queries leverage the rich data available in this Netflix shows and movies database to guide decision-making in content strategy, marketing, production, and more.
