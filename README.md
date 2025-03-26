@@ -22,17 +22,6 @@ The database consists of multiple tables, each representing a specific aspect of
 - `DATA_LISTED_IN`: Links shows to their genres/categories.
 - `CASTING`: Connects shows to their directors and cast members.
 
-The `ALL_SHOW_INFO` table is a comprehensive table that combines data from all the above tables using SQL joins. It includes fields like show ID, title, director name, cast members, country, date added, release year, rating description, duration, genre, description, and type.
-
-## Usage Instructions
-1. **ALL_TOGETHER.sql**: Run this file first to create the entire database with all the individual tables.
-2. **final_TABLE.sql**: Execute this file to create the `ALL_SHOW_INFO` table, which consolidates all fields into a single table.
-3. **Database_queries.sql**: This file contains queries to display the top 100 rows from the `ALL_SHOW_INFO` table. Running these queries will showcase that the database and the final table have been set up correctly.
-
-This README is intended to provide a comprehensive guide to understanding and navigating the database created from the Netflix dataset. Each step is crucial for the proper setup and viewing of the data within the SQL environment.
-
-The Entity-Relationship Diagram (ERD) below visually represents the structure and interconnections of the various tables within the database. This diagram illustrates how data is organized and related across different aspects of the Netflix shows and movies dataset. (Once I have time I will combine several tables into one such as a single MOVIES table which would contain show_id, title, description, duration, etc.)  
-  
 <img width="1728" alt="image" src="Schema.png">  
   
 ## Potential Business Questions
