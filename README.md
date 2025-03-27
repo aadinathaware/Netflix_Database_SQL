@@ -49,7 +49,7 @@ Identify versatile movies that appeal to diverse audiences. Useful for content r
 📌 Business Objective:
 Provide insights into director-movie relationships for industry research, fan engagement, and content navigation on streaming platforms.
 
-![](Outputs/Movies_with_their_directors.png)
+![](Outputs/Movies_with_directors.png)
 
 ### 5. Find the top 5 most frequent directors
 📌 Business Objective:
