@@ -22,7 +22,7 @@ The database consists of multiple tables, each representing a specific aspect of
 - `DATA_LISTED_IN`: Links shows to their genres/categories.
 - `CASTING`: Connects shows to their directors and cast members.
 
-<img width="1728" alt="image" src="Schema.png">  
+
   
 ## Potential Business Questions
 
