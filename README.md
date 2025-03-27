@@ -11,7 +11,6 @@ The database consists of multiple tables, each representing a specific aspect of
 ### Tables in the Database:
 - `MOVIES`: Contains movie titles and their IDs.
 - `DIRECTOR`: Stores director names and their IDs.
-- `CAST`: Lists cast members and their IDs.
 - `MISC`: Includes miscellaneous information like country and type.
 - `TIME_INFO`: Contains time-related data such as date added and release year.
 - `RATING`: Stores rating descriptions and their IDs.
@@ -22,7 +21,8 @@ The database consists of multiple tables, each representing a specific aspect of
 - `DATA_LISTED_IN`: Links shows to their genres/categories.
 - `CASTING`: Connects shows to their directors and cast members.
 
-![](Dataset_schema.png)
+## Schema
+![](Dataset_Schema.png)
 
   
 ## Potential Business Questions
