@@ -6,7 +6,7 @@ This project involves a comprehensive analysis of Netflix's movies and TV shows 
 The purpose of this project is to demonstrate data normalization and SQL database creation skills, transforming a flat CSV file into a structured and normalized SQL database.
 
 ## Database Structure
-The database consists of multiple tables, each representing a specific aspect of the Netflix dataset. The tables are normalized to reduce redundancy and improve data integrity. The final table, `ALL_SHOW_INFO`, combines data from all these tables to provide a comprehensive overview of the dataset.
+The database consists of multiple tables, each representing a specific aspect of the Netflix dataset. The tables are normalized to reduce redundancy and improve data integrity.
 
 ### Tables in the Database:
 - `MOVIES`: Contains movie titles and their IDs.
@@ -22,6 +22,7 @@ The database consists of multiple tables, each representing a specific aspect of
 - `DATA_LISTED_IN`: Links shows to their genres/categories.
 - `CASTING`: Connects shows to their directors and cast members.
 
+![](Dataset_schema.png)
 
   
 ## Potential Business Questions
