@@ -43,7 +43,7 @@ Analyze movie production trends over time to determine industry growth, peak pro
 📌 Business Objective:
 Identify versatile movies that appeal to diverse audiences. Useful for content recommendation systems and genre-based promotions.
 
-![](Outputs/Directors_in_multiple_genres.png)
+![](Outputs/Movies_with_multiple_genres.png)
 
 ### 4. List all movies along with their director
 📌 Business Objective:
